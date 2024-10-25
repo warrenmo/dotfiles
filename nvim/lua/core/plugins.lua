@@ -23,6 +23,14 @@ return require('packer').startup(function(use)
     "phha/zenburn.nvim",
     config = function() require("zenburn").setup() end
   }
+  use 'rust-lang/rust.vim'
+  use 'simrat39/rust-tools.nvim'
+  use 'neovim/nvim-lspconfig'
+  use {
+    'nvim-lua/plenary.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
