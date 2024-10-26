@@ -8,6 +8,20 @@ See [https://github.com/neovim/neovim/blob/master/INSTALL.md](https://github.com
 
 [This repo](https://github.com/neovim/neovim-releases) maintains unsupported builds of neovim.
 
+# Plugins
+
+## ripgrep
+
+`ripgrep` is recommended for `telescope.nvim`. To install `ripgrep`, we first need to install `cargo`:
+```bash
+$ curl https://sh.rustup.rs -sSf | sh
+$ cargo --version
+```
+Now we can install `ripgrep`:
+```bash
+$ cargo install ripgrep
+```
+
 # LSPs
 
 ## Rust
