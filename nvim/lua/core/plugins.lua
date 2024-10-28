@@ -14,23 +14,18 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+  use 'nvim-lua/plenary.nvim'
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
-  -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use {
     "phha/zenburn.nvim",
     config = function() require("zenburn").setup() end
   }
+  use 'neovim/nvim-lspconfig'
   use 'rust-lang/rust.vim'
   use 'simrat39/rust-tools.nvim'
-  use 'neovim/nvim-lspconfig'
-  use {
-    'nvim-lua/plenary.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
