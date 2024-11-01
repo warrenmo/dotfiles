@@ -1,14 +1,8 @@
-# Installation
+# Requirements
 
-## Neovim
+## cmake
 
-See [https://github.com/neovim/neovim/blob/master/INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md).
-
-### Older systems
-
-[This repo](https://github.com/neovim/neovim-releases) maintains unsupported builds of neovim.
-
-# Plugins
+## make
 
 ## ripgrep
 
@@ -21,6 +15,18 @@ Now we can install `ripgrep`:
 ```bash
 $ cargo install ripgrep
 ```
+
+# Installation
+
+## Neovim
+
+See [https://github.com/neovim/neovim/blob/master/INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md).
+
+### Older systems
+
+[This repo](https://github.com/neovim/neovim-releases) maintains unsupported builds of neovim.
+
+# Plugins
 
 # LSPs
 

@@ -1,5 +1,11 @@
-require("plugins.init")
-require("core.keymaps")
+local load = function(mod)
+  package.loaded[mod] = nil
+  require(mod)
+end
 
-vim.g.rustfmt_autosave = 1
+load('user.settings')
+load('user.commands')
+load('user.keymaps')
+require('user.plugins')
 
+pcall(vim.cmd.colorscheme, 'tokyonight')
