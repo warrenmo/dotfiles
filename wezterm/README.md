@@ -29,11 +29,20 @@ $ git clone https://github.com/danielcopper/wezterm-session-manager.git ~/.confi
 ```bash
 $ git clone https://github.com/aca/wezterm.nvim.git
 $ cd wezterm.nvim/wezterm.nvim.navigator && go install
+$ cd ../..
+$ rm -rf wezterm.nvim
 ```
 
 ### Golang compiler
 
 ```bash
 $ brew install go
+```
+
+### Recommended step (though seemingly unnecessary?)
+
+Add this to your `.bashrc` or `.zshrc`:
+```
+[ -n "$WEZTERM_PANE" ] && export NVIM_LISTEN_ADDRESS="/tmp/nvim$WEZTERM_PANE"
 ```
 
