@@ -38,6 +38,7 @@ There's also a function defined in this repo's `.zshrc` file that allows you to 
 # .zshrc
 
 ```bash
+$ mv ~/.zshrc ~/.zshrc.old
 $ cp dotfiles/zsh/.zshrc ~/
 ```
 
