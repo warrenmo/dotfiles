@@ -4,6 +4,11 @@ ZSH_PLUGINS=$ZSH/plugins
 autoload -Uz compinit
 compinit
 
+### Aliases
+
+alias nv=nvim
+
+
 ### Custom functions
 
 zssh() {
