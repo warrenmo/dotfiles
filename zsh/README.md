@@ -34,22 +34,32 @@ $ ssh -t <name>@<machine> "~/.local/bin/zsh -l"
 
 There's also a function defined in this repo's `.zshrc` file that allows you to just run `zssh <machine>`.
 
-## Font
+
+# .zshrc
 
 ```bash
-brew install font-meslo-lg-nerd-font
+$ cp dotfiles/zsh/.zshrc ~/
+```
+
+# Plugins
+
+```bash
+$ mkdir -p ~/.local/zsh/plugins
+$ cp -r dotfiles/zsh/plugins ~/.local/zsh
 ```
 
 ## powerlevel10k
 
 ```bash
 $ brew install powerlevel10k
+$ echo "source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme" >> .zshrc
 ```
 
 ### Local install
 
 ```bash
-$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
-$ echo "source ~/.powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.config/zsh/plugins/powerlevel10k
+$ echo "source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 $ source ~/.zshrc
 ```
+
