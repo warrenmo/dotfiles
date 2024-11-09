@@ -1,6 +1,9 @@
 ZSH=$HOME/.config/zsh
 ZSH_PLUGINS=$ZSH/plugins
 
+autoload -Uz compinit
+compinit
+
 ### Custom functions
 
 zssh() {
@@ -18,6 +21,6 @@ zssh() {
 source $ZSH_PLUGINS/git.plugin.zsh
 source $ZSH_PLUGINS/zsh-autosuggestions.zsh
 # zsh-syntax-highlighting must go last
-source $ZSH_PLUGINS/zsh-syntax-highlighting.zsh
+source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # powerlevel10k location depends on whether you used `brew` or installed locally

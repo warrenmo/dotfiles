@@ -49,6 +49,12 @@ $ mkdir -p ~/.local/zsh/plugins
 $ cp -r dotfiles/zsh/plugins ~/.local/zsh
 ```
 
+## zsh-syntax-highlighting
+
+```bash
+$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/zsh/plugins
+```
+
 ## powerlevel10k
 
 ```bash
