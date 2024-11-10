@@ -35,7 +35,7 @@ bindkey '^[^N' history-search-forward
 
 ### Aliases
 
-alias nv=nvim
+alias v=nvim
 
 
 ### Plugins
