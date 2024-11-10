@@ -4,6 +4,7 @@ ZSH_PLUGINS=$ZSH/plugins
 autoload -Uz compinit
 compinit
 
+
 ### Aliases
 
 alias nv=nvim
@@ -20,6 +21,20 @@ zssh() {
   shift  # Shift to handle additional SSH options after the server name
   ssh -t "$server" "~/.local/bin/zsh -l" "$@"
 }
+
+### History
+
+HISTFILE=$HOME/.zhistory
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
+
+bindkey '^[^P' history-search-backward
+bindkey '^[^N' history-search-forward
+
 
 ### Plugins
 
