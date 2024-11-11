@@ -1,6 +1,7 @@
 ZSH=$HOME/.config/zsh
 ZSH_PLUGINS=$ZSH/plugins
 
+autoload -Uz compinit && compinit
 
 ### Functions
 
@@ -37,13 +38,20 @@ bindkey '^[^N' history-search-forward
 
 alias v=nvim
 
+# eza: ls alternative
+alias ls="eza --icons=auto"
+
+# zoxide: cd alternative
+# NOTE: this line must be placed after the line compinit is called;
+#       you may have to rebuild your completions cache by running `rm ~/.zcompdump*; compinit
+eval "$(zoxide init zsh)"
+
 
 ### Plugins
 
 # Git branch, subcommand, etc. completion
 zstyle ':completion:*:*:git:*' script ~/.config/zsh/plugins/git-completion.bash
 fpath=(~/.zsh $fpath)
-autoload -Uz compinit && compinit
 
 # Git aliases (e.g., gst = git status; gcb = git checkout -b)
 source $ZSH_PLUGINS/git.plugin.zsh
