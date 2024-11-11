@@ -3,6 +3,7 @@ ZSH_PLUGINS=$ZSH/plugins
 
 autoload -Uz compinit && compinit
 
+
 ### Functions
 
 zssh() {
@@ -69,3 +70,9 @@ source $ZSH_PLUGINS/zsh-autosuggestions.zsh
 # NOTE: the lower this plugin is in this .zshrc file, the better
 source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+### Misc
+
+# may be necessary to uncomment the line below
+#  if treesitter.nvim is erroring like crazy when you run nvim
+#CC=gcc
