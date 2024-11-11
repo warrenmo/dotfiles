@@ -1,20 +1,7 @@
 # Requirements
 
-## cmake
-
-## make
-
-## ripgrep
-
-`ripgrep` is recommended for `telescope.nvim`. To install `ripgrep`, we first need to install `cargo`:
-```bash
-$ curl https://sh.rustup.rs -sSf | sh
-$ cargo --version
-```
-Now we can install `ripgrep`:
-```bash
-$ cargo install ripgrep
-```
+- `ripgrep`
+  - which requires `cargo`
 
 # Installation
 

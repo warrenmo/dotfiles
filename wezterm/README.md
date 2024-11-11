@@ -13,7 +13,7 @@ $ cp dotfiles/wezterm/.wezterm.lua ~/
 $ brew install font-meslo-lg-nerd-font
 ```
 
-### Powerline (old, not currently used)
+### Powerline (not currently used in favor of MesloLG)
 
 ```bash
 $ git clone https://github.com/powerline/fonts.git
