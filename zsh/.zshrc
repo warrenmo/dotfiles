@@ -38,6 +38,10 @@ bindkey '^[^N' history-search-forward
 ### Aliases
 
 alias v=nvim
+alias vf="nvim \$(fzf --preview='cat {}')"
+alias fzfp="fzf --preview='cat {}'"
+alias tadt="tmux attach -d -t"
+alias td="tmux detach"
 
 # eza: ls alternative
 alias ls="eza --icons=auto"
